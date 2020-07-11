@@ -1,11 +1,11 @@
 import speech_recognition as sr
-
+import os
 
 def recognize():
     
 	    global text
 	    
-	    filename = '/home/nya/Downloads/audio.wav'
+	    filename = os.path.expanduser('~/Downloads/audio.wav')
 
 	    r = sr.Recognizer()
 
