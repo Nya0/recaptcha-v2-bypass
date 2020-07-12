@@ -91,8 +91,8 @@ if "iframe" in browser.page_source:
 		    result = browser.find_element_by_css_selector('#audio-response')
 		    result.send_keys(recognize.text , Keys.ENTER)
 		    
-		    os.remove('/home/nya/Downloads/audio.mp3')
-		    os.remove('/home/nya/Downloads/audio.wav')
+		    os.remove('./Downloads/audio.mp3')
+		    os.remove('./Downloads/audio.wav')
 		    
 	    print("reCaptcha Bypass Successful")
 	    browser.quit()
